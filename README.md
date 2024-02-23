@@ -1,6 +1,6 @@
 <h1 align="center"> Objetivos do projeto </h1>
 
-Projeto pessoal em desenvolvimento utilizando html e css, sou estudante e conforme os meus avanços em desenvolvimento web vou postando aqui.
+Projeto pessoal em desenvolvimento utilizando html e css, sou estudante e conforme os meus avanços em desenvolvimento web vou modificando aqui.
 Fotografia de rua, busca trazer um pouco da história desta arte sobretudo em preto e branco.
 
 <p align="center">
