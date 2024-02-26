@@ -58,7 +58,7 @@ a {
 
 .cabecalho__menu__link {
     font-family: var(--fonte-primaria);
-    font-size: 20px;
+    font-size: 20rem;
     font-weight: 400;
     color: var(--cor-terciaria);
     text-decoration: none;
@@ -89,7 +89,7 @@ a {
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 35px;
+    font-size: 35rem;
     font-family: var(--fonte-primaria);
     color: var(--cor-terciaria);
     font-weight: 400;
@@ -101,7 +101,7 @@ a {
 }
 
 .apresentacao__conteudo__texto {
-    font-size: 25px;
+    font-size: 25rem;
     font-family: var(--fonte-secundaria);
     font-weight: 300;
     text-align: justify;
@@ -129,7 +129,7 @@ a {
 }
 
 .subapresentacao__conteudo__titulo {
-    font-size: 35px;
+    font-size: 35rem;
     font-family: var(--fonte-primaria);
     font-weight: 400;
 
@@ -140,7 +140,7 @@ a {
     font-family: var(--fonte-secundaria);
     font-weight: 100;
     line-height: 2.0;
-    font-size: 25px;
+    font-size: 25rem;
 
 }
 
