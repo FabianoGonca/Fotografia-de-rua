@@ -21,9 +21,8 @@ body {
     /*height: 100vh;*/
     box-sizing: border-box;
     display: block;
-    background-image: url("../assets/background/background.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
+
+
 
 
 }
@@ -35,33 +34,41 @@ h2 {
 
 }
 
-img {
-    max-width: 100%;
-}
+
 
 a {
     text-decoration: none;
     color: inherit;
+
 }
 
 .cabecalho {
-    padding: 3% 18% 2% 20%;
+
     background-color: var(--cor-primaria);
 
+
+
 }
 
-.cabecalho__menu {
-
+ul {
     display: flex;
-    gap: 280px;
+    gap: 12.25%;
+    font-size: 1.25rem;
+    justify-content: center;
+
 }
+
+
 
 .cabecalho__menu__link {
     font-family: var(--fonte-primaria);
-    font-size: 1.25rem;
+    padding: 30px;
+
     font-weight: 400;
     color: var(--cor-terciaria);
     text-decoration: none;
+    list-style: none;
+
 
 }
 
@@ -73,23 +80,30 @@ a {
     margin-bottom: 0%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    min-width: 20rem;
+    max-width: 128rem;
 
-    apresentacao__imagem{
-        width: 50%;
-    }
+
+
 
 }
 
 .apresentacao__conteudo {
-    width: 50%;
-    margin-left: auto;
+
+
     /* centralizacao do texto*/
-    margin-right: auto;
+
     display: flex;
     flex-direction: column;
     gap: 40px;
     color: var(--cor-secundaria);
+    width: 50%;
+}
+
+.apresentacao__imagem {
+    width: 50%;
+    min-width: 320px;
+    max-width: 2048px;
 }
 
 .apresentacao__conteudo__titulo {
@@ -97,6 +111,7 @@ a {
     font-family: var(--fonte-primaria);
     color: var(--cor-terciaria);
     font-weight: 400;
+    margin: 0 2.5rem;
 
 }
 
@@ -110,6 +125,7 @@ a {
     font-weight: 300;
     text-align: justify;
     line-height: 2.0;
+    margin: 0 2.5rem;
 
     /* espaçamento entre as linhas*/
 
@@ -130,6 +146,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 20px;
+
 }
 
 .subapresentacao__conteudo__titulo {
@@ -148,22 +165,185 @@ a {
 
 }
 
-.rodape{
-    width: 2048px;
-    height: 225px;
+.rodape {
+    width: 128rem;
+    height: 14.06rem;
     background-color: var(--cor-primaria);
-    max-width: 2048px;
-    min-width: 200px;
+
 
 }
 
-.rodape__lista{
+.rodape__lista {
     display: flex;
     gap: 10px;
     justify-content: center;
 }
 
-footer p{
+.lista__fotos {
+    width: 100%;
+}
+
+footer p {
     color: white;
     text-align: center;
+}
+
+@media (max-width:500px) {
+
+    ul {
+
+        justify-content: right;
+        gap: 20%;
+        font-size: 1.25rem;
+    }
+
+    li {
+        font-size: 1rem;
+    }
+
+    .apresentacao {
+        min-width: 1rem;
+        max-width: 128rem;
+        max-height: 450px;
+        padding-bottom: 100px;
+        flex-direction: column;
+    }
+
+    .apresentacao__conteudo__titulo {
+        padding-top: 500px;
+        margin-top: 0px;
+    }
+
+    .apresentacao__conteudo__texto {
+        padding-bottom: 200px;
+    }
+}
+
+@media (max-width:755px) {
+    ul {
+        justify-content: center;
+        gap: 50px;
+        font-size: 0.62rem;
+    }
+
+    li {
+        font-size: 1rem;
+    }
+
+    .apresentacao {
+        flex-direction: column;
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 0.87rem;
+        text-align: center;
+        padding-top: 1.0rem;
+    }
+
+    .apresentacao__conteudo__texto {
+        font-size: 0.7rem;
+        padding-bottom: 3.55rem;
+    }
+
+    .subapresentacao__conteudo__titulo {
+        font-size: 0.87rem;
+    }
+
+    .subapresentacao__conteudo__texto {
+        font-size: 0.7rem;
+    }
+}
+
+@media(max-width: 900px) {
+
+    li {
+        font-size: 1rem;
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 1rem;
+    }
+
+    .apresentacao__conteudo__texto {
+        font-size: 0.90rem;
+    }
+
+    .subapresentacao__conteudo__titulo {
+        font-size: 1rem;
+    }
+
+    .subapresentacao__conteudo__texto {
+        font-size: 0.90rem;
+    }
+}
+
+@media (max-width:1290px) {
+
+    .apresentacao {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 1562px) {
+    li {
+        width: 50%;
+
+
+    }
+
+    ul {
+        justify-content: center;
+        gap: 1%;
+        font-size: 1.25rem;
+    }
+
+    .lista-fotos {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 1910px) {
+
+
+    .apresentacao {
+        /* flex-direction: column; */
+        min-width: 20rem;
+        max-width: 200rem;
+
+    }
+
+    .apresentacao__conteudo__titulo {
+        text-align: center;
+    }
+
+    .rodape__lista {
+        align-items: center;
+    }
+
+    .lista__fotos {
+        width: 100%;
+
+
+
+
+    }
+
+    .rodape {
+        min-width: 100%;
+        max-width: 50%;
+        height: 50%;
+
+
+
+    }
+
+    ul {
+        width: 100%;
+        text-align: center;
+    }
+
+
 }
